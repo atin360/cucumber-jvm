@@ -1,0 +1,90 @@
+<project name="java-helloworld" basedir="." default="runcukes">
+    <property name="repo" value="https://oss.sonatype.org/content/repositories/releases"/>
+    <property name="cucumber-jvm.version" value="1.0.2"/>
+    <property name="gherkin.version" value="2.9.3"/>
+    <property name="junit.version" value="4.10"/>
+	<property name="basedir" value="."/>
+    <property name="jars" value="lib"/>
+	<property name="junit.out.dir.xml" value="testresults" />
+    <property name="junit.out.dir.html" value="testresults/html" />
+    <property name="output.dir" value="tmp" />
+
+    <!--target name="download">
+        <mkdir dir="${jars}"/>
+        <get src="${repo}/info/cukes/cucumber-core/${cucumber-jvm.version}/cucumber-core-${cucumber-jvm.version}.jar"
+             dest="${jars}/cucumber-core-${cucumber-jvm.version}.jar"/>
+        <get src="${repo}/info/cukes/cucumber-java/${cucumber-jvm.version}/cucumber-java-${cucumber-jvm.version}.jar"
+             dest="${jars}/cucumber-java-${cucumber-jvm.version}.jar"/>
+        <get src="${repo}/info/cukes/cucumber-junit/${cucumber-jvm.version}/cucumber-junit-${cucumber-jvm.version}.jar"
+             dest="${jars}/cucumber-junit-${cucumber-jvm.version}.jar"/>
+        <get src="${repo}/info/cukes/gherkin/${gherkin.version}/gherkin-${gherkin.version}.jar"
+             dest="${jars}/gherkin-${gherkin.version}.jar"/>
+        <get src="${repo}/junit/junit/${junit.version}/junit-${junit.version}.jar"
+             dest="${jars}/junit-${junit.version}.jar"/>
+    </target-->
+
+    <target name="classpath">
+        <path id="classpath">
+            <fileset dir="${jars}">
+                <include name="**/*.jar"/>
+            </fileset>
+            <pathelement location="target/classes"/>
+            <pathelement location="target/test-classes"/>
+        </path>
+    </target>
+
+    <target name="compile" depends="classpath">
+        <mkdir dir="target/classes"/>
+        <javac srcdir="src/main/java" destdir="target/classes" classpathref="classpath" includeantruntime="false"/>
+    </target>
+	<delete dir="${junit.out.dir.xml}" />
+	<mkdir dir="${junit.out.dir.xml}" />
+		<mkdir dir="${junit.out.dir.html}" />
+		<mkdir dir="${output.dir}" />
+    <target name="runcukes" depends="compile">	
+        <java classname="cucumber.cli.Main" fork="true" failonerror="t">
+			<classpath>
+                <fileset dir="${jars}">
+                    <include name="**/*.jar"/>
+                </fileset>
+				<pathelement location="target/classes"/>
+                <pathelement location="target/test-classes"/>
+            </classpath>
+				<arg value="--glue"/>
+				<arg value="cucumber.examples.java.helloworld"/>
+				<arg value="src/test/resources"/>
+				<!--arg value="junit:output"/> 
+				<arg value="out"/> 
+				<arg value="${basedir}/target/junit-report"/> 
+				<arg value="features"/-->
+		</java>
+		<junit printsummary="true" haltonfailure="false"  >				
+			<classpath>
+				<fileset dir="${jars}">
+                    <include name="**/*.jar"/>
+                </fileset>
+				<pathelement location="target/test-classes"/>
+				<pathelement location="target/classes"/>
+			</classpath>
+			<formatter type="plain" usefile="false"/>
+			<formatter type="xml"/>
+			<batchtest todir="${junit.out.dir.xml}">
+				<fileset dir="target/test-classes" includes="cucumber/examples/java/helloworld/*.class"/>  
+			</batchtest>
+		</junit>
+		<junitreport todir="${junit.out.dir.html}">
+			<fileset dir="${junit.out.dir.xml}">
+				<include name="*.xml"/>
+			</fileset>
+		<report format="frames" todir="${junit.out.dir.html}"/>
+		</junitreport>
+
+		<delete dir="${output.dir}" />	
+	</target>
+		
+		
+		
+    <target name="clean">
+        <delete dir="target"/>
+    </target>
+</project>

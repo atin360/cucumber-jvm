@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="atinc" name="cucumber.examples.java.helloworld.SearchStepDefinitions" tests="1" time="0.0" timestamp="2012-04-20T13:10:20">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="repo" value="https://oss.sonatype.org/content/repositories/releases" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_17\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="C:\Program Files\apache-ant-1.8.1" />
+    <property name="java.runtime.version" value="1.6.0_17-b04" />
+    <property name="user.name" value="atinc" />
+    <property name="junit.out.dir.html" value="testresults/html" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_17\jre\bin" />
+    <property name="ant.project.default-target" value="runcukes" />
+    <property name="ant.project.name" value="java-helloworld" />
+    <property name="junit.out.dir.xml" value="testresults" />
+    <property name="java.version" value="1.6.0_17" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="gherkin.version" value="2.9.3" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_17\jre" />
+    <property name="ant.file.java-helloworld" value="E:\SelCu\build.xml" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\SelCu\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="14.3-b01" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\Program Files\apache-ant-1.8.1\lib" />
+    <property name="output.dir" value="tmp" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.home" value="C:\Documents and Settings\atinc" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.type.java-helloworld" value="file" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_17\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\jruby-1.6.7\bin;C:\Program Files\ImageMagick-6.7.3-Q16;C:\Ruby192\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Java\jdk1.6.0_17\bin;C:\Python26;C:\Python26\Scripts;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\apache-ant-1.8.1\bin;C:\Program Files\Java\apache-ant-1.8.1\bin;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Java\junit4.8\junit.jar;F:\Selenium Tool\selenium-java-client-driver-1.0.1\selenium-java-client-driver.jar;C:\Program Files\Java\jdk1.5.0_11\lib\tools.jar;C:\jboss-5.1.0.GA\bin;C:\Program Files\Java\jre6\bin;C:\Python26\Scripts;F:\Automation Tools\jython_installer-2.5.1;E:\gtk+-bundle_2.22.1-20101227_win32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jre6;C:\Program Files\Android\android-sdk\tools;C:\xampp\htdocs;C:\Program Files\apache-maven-3.0.4\bin;C:\javamail-1.4.5\mail.jar;C:\jaf-1.1.1\activation.jar;C:\Program Files\Common Files\Ahead\Lib\" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="jars" value="lib" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="C:\Program Files\apache-ant-1.8.1\lib\ant-launcher.jar;C:\Program Files\Java\jre6\lib\ext\QTJava.zip;C:\javamail-1.4.5\mail.jar;C:\jaf-1.1.1\activation.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-antlr.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-bcel.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-bsf.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-log4j.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-oro.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-regexp.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-resolver.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-apache-xalan2.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-commons-logging.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-commons-net.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-jai.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-javamail.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-jdepend.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-jmf.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-jsch.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-junit.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-launcher.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-netrexx.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-nodeps.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-swing.jar;C:\Program Files\apache-ant-1.8.1\lib\ant-testutil.jar;C:\Program Files\apache-ant-1.8.1\lib\ant.jar;C:\Program Files\apache-ant-1.8.1\lib\pyAntTasks.jar;C:\Program Files\Java\jdk1.6.0_17\lib\tools.jar" />
+    <property name="ant.version" value="Apache Ant version 1.8.1 compiled on April 30 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 3" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\atinc\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="cucumber-jvm.version" value="1.0.2" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\SelCu" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="E:\SelCu" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="C:\Program Files\apache-ant-1.8.1\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="runcukes" />
+    <property name="junit.version" value="4.10" />
+  </properties>
+  <testcase classname="cucumber.examples.java.helloworld.SearchStepDefinitions" name="initializationError" time="0.0">
+    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
